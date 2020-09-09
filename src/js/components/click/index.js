@@ -42,7 +42,6 @@ export default ( Splide, Components ) => {
 		mount() {
 			Splide
 				.on( 'click', onClick, Components.Elements.track, { capture: true } )
-				.on( 'drag', () => { disabled = true } )
 				.on( 'moved', () => { disabled = false } );
 		},
 	};

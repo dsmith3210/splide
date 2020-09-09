@@ -1,6 +1,6 @@
 /*!
  * Splide.js
- * Version  : 2.4.14
+ * Version  : 2.4.15
  * License  : MIT
  * Copyright: 2020 Naotoshi Fujita
  */
@@ -4212,8 +4212,6 @@ var FRICTION_REDUCER = 7;
     mount: function mount() {
       Splide.on('click', onClick, Components.Elements.track, {
         capture: true
-      }).on('drag', function () {
-        disabled = true;
       }).on('moved', function () {
         disabled = false;
       });
